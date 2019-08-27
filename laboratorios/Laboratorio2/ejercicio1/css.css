@@ -1,0 +1,74 @@
+/***************************************************
+        ** Sin modificar el HTML dado, aplique todas las **
+        ** reglas solicitadas                            **
+        ***************************************************/
+    
+        /*
+            Para el body:
+            -Aplique como color de fondo #FFE0A8
+            -Establezca como familia de fuentes 'Railway', sans-serif
+            -Aplique margenes a los lados del 15% y margenes superior-inferior de 5em
+        */
+        body{
+            background-color: #FFE0A8;
+            font-family: 'Railway', sans-serif;
+            margin: 5em 15%;
+        }
+        /*
+        Para los h1 y h4:
+            -Color de texto rojo
+        */
+        h1,h4{
+            color: red;
+
+        }
+        /*
+        Para h3:
+            -Apllique un borde izquierdo de 5px, color rgb(167, 62, 1) y sólido
+            -Aplique un padding izquierdo de 5px
+        */
+        h3{
+            border-left: 5px rgb(167, 62, 1) solid;
+            padding-left: 5px;
+        }
+        /*
+        Para los parrafos:
+            -Justifique el texto.
+            -Indente el texto 5px
+        */
+        p{
+            text-align: justify;
+            text-indent: 5px;
+        }
+        /*
+        Para los enlaces:
+            -Color de texto rgb(0, 165, 102)
+            -Elimine las decoraciones en el texto
+        */
+        a{
+            color: rgb(0, 165, 102);
+            text-decoration: none;
+        }
+        /*
+        A los elementos de una lista:
+            -Margen infierior de 1em
+        */
+        li{
+            margin: 0 0 1em; 
+        }
+        /*
+        A las imagenes:
+            -Ancho fijo de 500px;
+        */
+        img{
+            width: 500px;
+        }
+        /*
+        A las líneas divisoras:
+            -Borde gris punteado de 5px
+            -padding de 1px en todas direcciones
+        */
+        hr{
+            border: 5px gray dotted;
+            padding: 1px;
+        }
