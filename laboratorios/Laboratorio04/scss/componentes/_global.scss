@@ -1,0 +1,73 @@
+$primarycolor : #000000;
+$secundarycolor: #ffffff;
+$bodybackgroundcolor: pink;
+$bordercolor: #1A237E;
+$bordergreen: #4CAF50;
+$bordersky:  #00BCD4;
+$borderpurple: #673AB7;
+$border: 1px transparent solid;
+$boxshadow: none;
+$padding: 1em;
+$opacity: 0.8em;
+$smallsize: 0.7em;
+$bigsize: 1.1em;
+
+@mixin buttons-dimmensions($border,$BorderRadius){
+    border: $border;
+    border-radius: $BorderRadius;
+
+}
+body{
+    background-color: $secundarycolor;
+}
+.btn{
+     @include buttons-dimmensions($border,0.3em);
+     box-shadow: $boxshadow;
+     padding: $padding;
+     opacity: $opacity;
+     text-transform: capitalize;
+
+     &:hover{
+         opacity: 1.0;
+     }
+}
+.small{
+    font-size: $smallsize;
+}
+.big{
+    font-size: $bigsize;
+}
+.black{
+    background-color: $bordercolor;
+    color: $secundarycolor;
+}
+.green{
+    background-color: $bordergreen;
+    color: $secundarycolor;
+}
+.sky{
+    background-color: $bordersky;
+    color: $secundarycolor;
+}
+.purple{
+    background-color: $borderpurple;
+    color: $secundarycolor;
+}
+
+.border{
+    background-color: transparent;
+    color: $bordercolor;
+    border-color: $bordercolor;
+}
+.border.green{
+    color: $bordergreen;
+    border-color: $bordergreen;
+}
+.border.sky{
+    color: $bordersky;
+    border-color: $bordersky;
+}
+.border.purple{
+    color: $borderpurple;
+    border-color: $borderpurple;
+}
